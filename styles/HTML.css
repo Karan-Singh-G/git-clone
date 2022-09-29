@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 8rem ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    /* border: 1px solid black; */
+    padding: 1.2rem 1.5rem;
+    border-radius:12rem;
+    background-color: #007f7f;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#container{
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+#card{
+    /* border: 1px solid black; */
+    width: 15rem;
+    height: 20rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.6rem  1.5rem;
+    box-shadow: 0 0 15px -2px #777171;
+}
+#image_div{
+    /* border: 1px solid black; */
+    height: 50%;
+    width: 100%;
+}
+#repository_name{
+    /* border: 1px solid black; */
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#language_name{
+    /* border: 1px solid black; */
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+#start_fork{
+    /* border: 1px solid black; */
+    height: 16%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#star{
+    /* border: 1px solid black; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+#fork{
+    /* border: 1px solid black; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-top: 1rem;
+   
+}
+#star_img{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 60%;
+}
+#star_written{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 60%;
+    
+}
+#fork_img{
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 60%;
+}
+#fork_written{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 60%;
+
+}
+.fa-star {
+   color: yellow;
+}
+.fa-code-fork{
+    color: aqua;
+    width: 100%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width:1024px){
+    #container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 3rem;
+        grid-gap: 1.5rem;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:1023px){
+    #container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        grid-gap: 1.5rem;
+       
+        grid-gap: 1.5rem;
+    }
+    #card{
+       margin: auto;
+    }
+    
+}
+
+
+
+@media (max-width:768px){
+    #container{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    #card{
+        margin: auto;
+        margin-top: 1.5rem;
+     }
+}
